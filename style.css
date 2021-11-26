@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 380em;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 13%;
+    background-image: url(https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:aaf75fc2-eba3-41ec-bc48-de80d0615154;revision=0?component_id=811cc325-03fa-4b5b-886e-a5a3b618cfce&api_key=CometServer1&access_token=1637883287_urn%3Aaaid%3Asc%3AUS%3Aaaf75fc2-eba3-41ec-bc48-de80d0615154%3Bpublic_f8fc5b1b46411741372b2787e8e78dc80e1d4748);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-image: url(https://cdn-sharing.adobecc.com/content/storage/id/urn:aaid:sc:US:aaf75fc2-eba3-41ec-bc48-de80d0615154;revision=0?component_id=41efe37b-abec-4c14-baef-9ad3c1b0a429&api_key=CometServer1&access_token=1637883287_urn%3Aaaid%3Asc%3AUS%3Aaaf75fc2-eba3-41ec-bc48-de80d0615154%3Bpublic_f8fc5b1b46411741372b2787e8e78dc80e1d4748);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.star{
+    position: absolute;
+    width: 30em;
+    height: 8em;
+    top: 27.1em;
+    left: 20.5em;
+}
+.kylo-ren{
+    position: absolute;
+    width: 84.5em;
+    height: 62em;
+    right: 21.5em;
+    z-index: 1;
+}
+.wars{
+    position: absolute;
+    width: 31.3em;
+    height: 8em;
+    top: 28.1em;
+    right: 9em;
+}
+.create-legion{
+    position: absolute;
+    width: 11em;
+    height: 11em;
+    top: 39em;
+    right: 12em;
+}
+.begin-to-play{
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 47em;
+    left: 18em;
+    z-index: 1;
+}
+.battlefront-banner{
+    position: absolute;
+    top: 68.55em;
+    right: 1em;
+}
+.about-game-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    width: 30em;
+    height: 14.9em;
+    bottom: 73.2em;
+    left: 60em;
+}
+.about-the-game{
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.line1{
+    position: absolute;
+    background-color: black;
+    width: 14.5em;
+    height: 0.2em;
+    align-self: flex-end;
+    top: 5em;
+}
+.about-game-text{
+    /* background-color: blueviolet; */
+    position: absolute;
+    width: 28em;
+    height: 10em;
+    text-align: right;
+    justify-self: flex-end;
+    align-self: flex-start;
+    top: 4.3em;
+    right: 0.06em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+}
+span::after{
+    content: "\a";
+    white-space: pre;
+}
+
+
