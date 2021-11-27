@@ -56,13 +56,13 @@ main{
     position: absolute;
     width: auto;
     height: auto;
-    top: 47em;
+    bottom: 42em;
     left: 18em;
     z-index: 1;
 }
 .battlefront-banner{
     position: absolute;
-    top: 68.55em;
+    top: 19em;
     right: 1em;
 }
 .about-game-box{
@@ -76,6 +76,7 @@ main{
     left: 60em;
 }
 .about-the-game{
+    /* background-color: aquamarine; */
     position: absolute;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
@@ -88,21 +89,87 @@ main{
     width: 14.5em;
     height: 0.2em;
     align-self: flex-end;
-    top: 5em;
+    top: 4.3em;
 }
 .about-game-text{
     /* background-color: blueviolet; */
     position: absolute;
     width: 28em;
-    height: 10em;
+    height: 8em;
     text-align: right;
     justify-self: flex-end;
     align-self: flex-start;
     top: 4.3em;
     right: 0.06em;
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.1px;
+    font-size: 24.5px;
+    letter-spacing: 0px;
+    line-height: 1em;
 }
+.line2{
+    position: absolute;
+    width: 97.6em;
+    height: 0.2em;
+    background-color: #707070;
+    right: 1em;
+    top: 41em;
+}
+.lord-sifh{
+    position: absolute;
+    height: 51em;
+    width: 56em;
+    top: 44em;
+    left: 17.5em;
+}
+.game-estructure{
+    /* background-color: brown; */
+    position: absolute;
+    width: 10em;
+    height: 6em;
+    top: 18.8em;
+    right: 12em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.5em;
+}
+mark{
+    background-color: transparent;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+.rey{
+    position: absolute;
+    height: 48em;
+    right: 4em;
+    top: 48em;
+}
+.main-menu{
+    position: absolute;
+    display: flex;
+    /* background-color: turquoise; */
+    width: 31em;
+    height: 24em;
+    right: 31.5em;
+    top: 58em;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    text-transform: uppercase;
+}
+ul.main-menu li{
+    font-size: 1.5em;
+}
+ul.main-menu li:hover{
+    cursor: pointer;
+    background-color: rgb(207, 63, 38);
+    color: white;
+
+}
+
 
 
