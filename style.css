@@ -19,10 +19,17 @@ header{
 main{
     position: relative;
     width: 100%;
-    height: 20%;
+    height: 50%;
     background-image: url(assets/back.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.main2{
+    position: relative;
+    background-image: url(assets/main2.png);
+    width: 100%;
+    height: 80%;
+    bottom: 15.3em;
 }
 .star{
     position: absolute;
@@ -56,7 +63,7 @@ main{
     position: absolute;
     width: auto;
     height: auto;
-    bottom: 42em;
+    bottom: 155.9em;
     left: 18em;
     z-index: 1;
 }
@@ -120,6 +127,7 @@ main{
     width: 56em;
     top: 44em;
     left: 17.5em;
+    z-index: 1;
 }
 .game-estructure{
     /* background-color: brown; */
@@ -144,7 +152,8 @@ mark{
     position: absolute;
     height: 48em;
     right: 4em;
-    top: 48em;
+    top: 47.5em;
+    z-index: 1;
 }
 .main-menu{
     position: absolute;
@@ -168,8 +177,76 @@ ul.main-menu li:hover{
     cursor: pointer;
     background-color: rgb(207, 63, 38);
     color: white;
-
 }
-
-
+.atributes{
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    top: 4.6em;
+    left: 8.4em;
+}
+.green-saber{
+    position: absolute;
+    top: 19em;
+    left: 7em;
+}
+.stormtrupper-canon{
+    position: absolute;
+    top: 19em;
+    left: 58.50em;
+}
+.giant-robots{
+    position: absolute;
+    top: 19em;
+    left: 84.12em;
+}
+.spaceships-battling{
+    position: absolute;
+    top: 34.68em;
+    left: 58.50em;
+}
+.three-stormtruppers{
+    position: absolute;
+    top: 34.68em;
+    left: 84.12em;
+}
+.new-graphics:hover{
+    opacity: 0.8;
+}
+.new-graphics{
+    opacity: 0;
+    position: absolute;
+    width: 27.375em;
+    top: 17.59em;
+    left: 57.5em;
+}
+.hierarchy{
+    position: absolute;
+    top: 54em;
+    left: 7em;
+}
+.main2 p{
+    /* background-color: turquoise; */
+    position: absolute;
+    color: white;
+    width: 45em;
+   bottom: 27em;
+   right: 6.3em;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+   text-align: right;
+}
+.how-to-play{
+    position: absolute;
+    color: white;
+    right: 24.4em;
+    bottom: 7em;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 31px;
+    font-weight: bolder;
+}
 
