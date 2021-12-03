@@ -31,6 +31,12 @@ main{
     height: 80%;
     bottom: 15.3em;
 }
+footer{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    top: 53.2em;
+}
 .star{
     position: absolute;
     width: 30em;
@@ -58,6 +64,7 @@ main{
     height: 11em;
     top: 39em;
     right: 12em;
+    z-index: 1;
 }
 .begin-to-play{
     position: absolute;
@@ -248,5 +255,34 @@ ul.main-menu li:hover{
     font-family: 'Roboto', sans-serif;
     font-size: 31px;
     font-weight: bolder;
+}
+.stormtrupper-capa-preta{
+    position: absolute;
+    height: 60em;
+    bottom: 65em;
+    left: 6em;
+}
+.footer-buttons{
+    /* background-color: aquamarine; */
+    position: absolute;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 65em;
+    height: 19em;
+    right: 6em;
+    top: 9em;
+    justify-content: space-between;
+}
+.about-app{
+    background-image: url(assets/retangulo.png);
+    position: absolute;
+    width: 76.75em;
+    height: 55.12em;
+    bottom: 0em;
+}
+.darth-vader{
+    position: absolute;
+    bottom: 2.9em;
+    right: 5.6em;
 }
 
