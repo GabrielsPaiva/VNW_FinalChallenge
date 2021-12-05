@@ -280,9 +280,69 @@ ul.main-menu li:hover{
     height: 55.12em;
     bottom: 0em;
 }
+.about-app-content{
+    /* background-color: aquamarine; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 80%;
+    margin: 10em;
+    margin-left: 13em;
+}
+section.about-app h2{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+}
 .darth-vader{
     position: absolute;
     bottom: 2.9em;
     right: 5.6em;
 }
-
+.footer-first-paragraph{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.27em;
+    font-weight: 100;
+}
+section.about-app h2{
+    margin-bottom: 1.5em;
+}
+.store-badges{
+    /* background-color: aquamarine; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 35em;
+    height: 4.3em;
+    top: 2em;
+}
+.google-play{
+    width: 16.8em;
+    height: 4.3em;
+}
+.app-store{
+    width: 16.8em;
+    height: 4.3em;
+}
+.under-badges-line{
+    position: absolute;
+    background-color: #D74430;
+    width: 35em;
+    height: 0.2em;
+    top: 22.5em;
+}
+.star-wars{
+    position: absolute;
+    top: 25.9em;
+}
+.footer-second-paragraph{
+    color: white;
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.27em;
+    font-weight: 100;
+    bottom: 1em;
+}
