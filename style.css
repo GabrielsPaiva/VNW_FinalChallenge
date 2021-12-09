@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -222,12 +221,42 @@ ul.main-menu li:hover{
 .new-graphics:hover{
     opacity: 0.8;
 }
+.new-graphics2:hover{
+    opacity: 0.8;
+}
+.new-graphics3:hover{
+    opacity: 0.8;
+}
+.new-graphics4:hover{
+    opacity: 0.8;
+}
 .new-graphics{
     opacity: 0;
     position: absolute;
     width: 27.375em;
     top: 17.59em;
     left: 57.5em;
+}
+.new-graphics2{
+    opacity: 0;
+    position: absolute;
+    width: 27.375em;
+    top: 17.59em;
+    left: 83.2em;
+}
+.new-graphics3{
+    opacity: 0;
+    position: absolute;
+    width: 27.375em;
+    left: 57.5em;
+    top: 33.3em;
+}
+.new-graphics4{
+    opacity: 0;
+    position: absolute;
+    width: 27.375em;
+    top: 33.3em;
+    left: 83.2em;
 }
 .hierarchy{
     position: absolute;
@@ -272,6 +301,78 @@ ul.main-menu li:hover{
     right: 6em;
     top: 9em;
     justify-content: space-between;
+}
+.download-button{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 16.25em;
+    height: 16.68em;
+}
+.download-button:hover h2{
+    font-weight: bolder;
+}
+.download-button:hover .download-line{
+    background-color: #D74430;
+}
+div.download-button h2{
+    font-size: 3em;
+    font-weight: 300;
+    padding-top: 0.1em;
+}
+div.download-button button:hover{
+       
+}
+div.download-button button{
+    background-color: black;
+    width: 19.5em;
+    height: 5em;
+    margin-top: 3.3em;
+    border: none;
+}
+button p{
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 300;
+    text-transform: uppercase;
+    left: 1.8em;
+    top: 4.2em
+}
+.download-button-text{
+    /* background-color: blue; */
+    width: 8.2em;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 2.3em;
+}
+.download-line{
+    position: absolute;
+    background-color: black;
+    width: 6em;
+    height: 0.1em;
+    bottom: 1em;
+}
+.choose-line{
+    position: absolute;
+    background-color: black;
+    width: 6em;
+    height: 0.1em;
+    bottom: 1em;
+    left: 29.5em;
+}
+.explore-line{
+    position: absolute;
+    background-color: black;
+    width: 6em;
+    height: 0.1em;
+    bottom: 1em;
+    left: 53.8em;
 }
 .about-app{
     background-image: url(assets/retangulo.png);
