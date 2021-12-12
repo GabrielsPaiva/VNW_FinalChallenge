@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     width: 100%;
     height: 380em;
 }
@@ -82,14 +82,12 @@ footer{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* background-color: blue; */
     width: 30em;
     height: 14.9em;
     bottom: 73.2em;
     left: 60em;
 }
 .about-the-game{
-    /* background-color: aquamarine; */
     position: absolute;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
@@ -105,7 +103,6 @@ footer{
     top: 4.3em;
 }
 .about-game-text{
-    /* background-color: blueviolet; */
     position: absolute;
     width: 28em;
     height: 8em;
@@ -136,7 +133,6 @@ footer{
     z-index: 1;
 }
 .game-estructure{
-    /* background-color: brown; */
     position: absolute;
     width: 10em;
     height: 6em;
@@ -164,7 +160,6 @@ mark{
 .main-menu{
     position: absolute;
     display: flex;
-    /* background-color: turquoise; */
     width: 31em;
     height: 24em;
     right: 31.5em;
@@ -264,7 +259,6 @@ ul.main-menu li:hover{
     left: 7em;
 }
 .main2 p{
-    /* background-color: turquoise; */
     position: absolute;
     color: white;
     width: 45em;
@@ -292,10 +286,8 @@ ul.main-menu li:hover{
     left: 6em;
 }
 .footer-buttons{
-    /* background-color: aquamarine; */
     position: absolute;
     display: flex;
-    /* flex-wrap: wrap; */
     width: 65em;
     height: 19em;
     right: 6em;
@@ -303,7 +295,6 @@ ul.main-menu li:hover{
     justify-content: space-between;
 }
 .download-button{
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,17 +304,18 @@ ul.main-menu li:hover{
 }
 .download-button:hover h2{
     font-weight: bolder;
+    
 }
 .download-button:hover .download-line{
+    background-color: #D74430;
+}
+.download-button:hover button{
     background-color: #D74430;
 }
 div.download-button h2{
     font-size: 3em;
     font-weight: 300;
     padding-top: 0.1em;
-}
-div.download-button button:hover{
-       
 }
 div.download-button button{
     background-color: black;
@@ -343,7 +335,6 @@ button p{
     top: 4.2em
 }
 .download-button-text{
-    /* background-color: blue; */
     width: 8.2em;
     align-self: center;
     font-family: 'Roboto', sans-serif;
@@ -382,7 +373,6 @@ button p{
     bottom: 0em;
 }
 .about-app-content{
-    /* background-color: aquamarine; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -412,7 +402,6 @@ section.about-app h2{
     margin-bottom: 1.5em;
 }
 .store-badges{
-    /* background-color: aquamarine; */
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -446,4 +435,421 @@ section.about-app h2{
     font-size: 1.27em;
     font-weight: 100;
     bottom: 1em;
+} */
+@media (max-width: 425px) {
+    body{
+        width: 100%;
+        height: fit-content;
+    }
+    header{
+        position: relative;
+        width: 100%;
+        height: 13%;
+        background-image: url(assets/urn_aaid_sc_US_aaf75fc2-eba3-41ec-bc48-de80d0615154.png);
+        background-size: 26.56em  12.5em;
+        background-repeat: no-repeat;
+    }
+    .star{
+        position: absolute;
+        width: 8em;
+        height: 2em;
+        top: 6.6em;
+        left: 3.3em;
+        
+    }
+    .kylo-ren{
+        position: absolute;
+        width: 17.3em;
+        height: 12.1em;
+        top: 1.3em;
+        right: 5.10em;
+        z-index: 1;
+    }
+    .wars{
+        position: absolute;
+        width: 8em;
+        height: 2em;
+        right: 0.8em;
+        top: 6.6em;
+        
+    }
+    .create-legion{
+        position: relative;
+        top: 14em;
+        left: 13.5em ;
+        z-index: 1;
+    }
+    .first-main-background{
+        width: 100%;
+        height: 90em;
+    }
+    .begin-to-play{
+        position: absolute;
+        width: 46%;
+        height: 17em;
+        top: 13em ;
+        left: 0.7em;
+        z-index: 1;
+    }
+    .battlefront-banner{
+        position: absolute;
+        width: 23em;
+        top: 31em;
+        left: 1.2em;
+    }
+    .about-game-box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 15em;
+        bottom: 56em;
+    }
+    .about-the-game{
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        text-transform: uppercase;
+        align-self: center;
+    }
+    .line1{
+        position: absolute;
+        background-color: black;
+        width: 14em;
+        height: 0.2em;
+        align-self: center;
+        top: 4.3em;
+    }
+    .about-game-text{
+        position: absolute;
+        width: 28em;
+        height: 8em;
+        text-align: center;
+        align-self: center;
+        top: 6.7em;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 1em;
+    }
+    .line2{
+        position: absolute;
+        width: 85%;
+        height: 0.2em;
+        background-color: #707070;
+        left: 1.8em;
+        top: 60em;
+    }
+    .lord-sifh{
+        /* position: absolute;
+        height: 51em;
+        width: 56em;
+        top: 44em;
+        left: 17.5em;
+        z-index: 1; */
+    }
+    .game-estructure{
+        /* position: absolute;
+        width: 10em;
+        height: 6em;
+        top: 18.8em;
+        right: 12em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        text-align: right;
+        line-height: 1.5em; */
+    }
+    mark{
+        /* background-color: transparent;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif; */
+    }
+    .rey{
+        /* position: absolute;
+        height: 48em;
+        right: 4em;
+        top: 47.5em;
+        z-index: 1; */
+    }
+    .main-menu{
+        /* position: absolute;
+        display: flex;
+        width: 31em;
+        height: 24em;
+        right: 31.5em;
+        top: 58em;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style-type: none;
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        text-transform: uppercase; */
+    }
+    ul.main-menu li{
+        /* font-size: 1.5em; */
+    }
+    ul.main-menu li:hover{
+        /* cursor: pointer;
+        background-color: rgb(207, 63, 38);
+        color: white; */
+    }
+    .atributes{
+        /* position: absolute;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 40px;
+        top: 4.6em;
+        left: 8.4em; */
+    }
+    .green-saber{
+        /* position: absolute;
+        top: 19em;
+        left: 7em; */
+    }
+    .stormtrupper-canon{
+        /* position: absolute;
+        top: 19em;
+        left: 58.50em; */
+    }
+    .giant-robots{
+        /* position: absolute;
+        top: 19em;
+        left: 84.12em; */
+    }
+    .spaceships-battling{
+        /* position: absolute;
+        top: 34.68em;
+        left: 58.50em; */
+    }
+    .three-stormtruppers{
+        /* position: absolute;
+        top: 34.68em;
+        left: 84.12em; */
+    }
+    .new-graphics:hover{
+        /* opacity: 0.8; */
+    }
+    .new-graphics2:hover{
+        /* opacity: 0.8; */
+    }
+    .new-graphics3:hover{
+        /* opacity: 0.8; */
+    }
+    .new-graphics4:hover{
+        /* opacity: 0.8; */
+    }
+    .new-graphics{
+        /* opacity: 0;
+        position: absolute;
+        width: 27.375em;
+        top: 17.59em;
+        left: 57.5em; */
+    }
+    .new-graphics2{
+        /* opacity: 0;
+        position: absolute;
+        width: 27.375em;
+        top: 17.59em;
+        left: 83.2em; */
+    }
+    .new-graphics3{
+        /* opacity: 0;
+        position: absolute;
+        width: 27.375em;
+        left: 57.5em;
+        top: 33.3em; */
+    }
+    .new-graphics4{
+        /* opacity: 0;
+        position: absolute;
+        width: 27.375em;
+        top: 33.3em;
+        left: 83.2em; */
+    }
+    .hierarchy{
+        /* position: absolute;
+        top: 54em;
+        left: 7em; */
+    }
+    .main2 p{
+        /* position: absolute;
+        color: white;
+        width: 45em;
+       bottom: 27em;
+       right: 6.3em;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 18px;
+       font-weight: 100;
+       text-align: right; */
+    }
+    .how-to-play{
+        /* position: absolute;
+        color: white;
+        right: 24.4em;
+        bottom: 7em;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 31px;
+        font-weight: bolder; */
+    }
+    .stormtrupper-capa-preta{
+        /* position: absolute;
+        height: 60em;
+        bottom: 65em;
+        left: 6em; */
+    }
+    .footer-buttons{
+        /* position: absolute;
+        display: flex;
+        width: 65em;
+        height: 19em;
+        right: 6em;
+        top: 9em;
+        justify-content: space-between; */
+    }
+    .download-button{
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        width: 16.25em;
+        height: 16.68em; */
+    }
+    .download-button:hover h2{
+        /* font-weight: bolder; */
+        
+    }
+    .download-button:hover .download-line{
+        /* background-color: #D74430; */
+    }
+    .download-button:hover button{
+        /* background-color: #D74430; */
+    }
+    div.download-button h2{
+        /* font-size: 3em;
+        font-weight: 300;
+        padding-top: 0.1em; */
+    }
+    div.download-button button{
+        /* background-color: black;
+        width: 19.5em;
+        height: 5em;
+        margin-top: 3.3em;
+        border: none; */
+    }
+    button p{
+        /* position: absolute;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.2em;
+        font-weight: 300;
+        text-transform: uppercase;
+        left: 1.8em;
+        top: 4.2em */
+    }
+    .download-button-text{
+        /* width: 8.2em;
+        align-self: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-top: 2.3em; */
+    }
+    .download-line{
+        /* position: absolute;
+        background-color: black;
+        width: 6em;
+        height: 0.1em;
+        bottom: 1em; */
+    }
+    .choose-line{
+        /* position: absolute;
+        background-color: black;
+        width: 6em;
+        height: 0.1em;
+        bottom: 1em;
+        left: 29.5em; */
+    }
+    .explore-line{
+        /* position: absolute;
+        background-color: black;
+        width: 6em;
+        height: 0.1em;
+        bottom: 1em;
+        left: 53.8em; */
+    }
+    .about-app{
+        /* background-image: url(assets/retangulo.png);
+        position: absolute;
+        width: 76.75em;
+        height: 55.12em;
+        bottom: 0em; */
+    }
+    .about-app-content{
+        /* position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        height: 80%;
+        margin: 10em;
+        margin-left: 13em; */
+    }
+    section.about-app h2{
+        /* color: white;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.5em; */
+    }
+    .darth-vader{
+        /* position: absolute;
+        bottom: 2.9em;
+        right: 5.6em; */
+    }
+    .footer-first-paragraph{
+        /* color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.27em;
+        font-weight: 100; */
+    }
+    section.about-app h2{
+        /* margin-bottom: 1.5em; */
+    }
+    .store-badges{
+        /* position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 35em;
+        height: 4.3em;
+        top: 2em; */
+    }
+    .google-play{
+        /* width: 16.8em;
+        height: 4.3em; */
+    }
+    .app-store{
+        /* width: 16.8em;
+        height: 4.3em; */
+    }
+    .under-badges-line{
+        /* position: absolute;
+        background-color: #D74430;
+        width: 35em;
+        height: 0.2em;
+        top: 22.5em; */
+    }
+    .star-wars{
+        /* position: absolute;
+        top: 25.9em; */
+    }
+    .footer-second-paragraph{
+        /* color: white;
+        position: absolute;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.27em;
+        font-weight: 100;
+        bottom: 1em; */
+    } 
 }
