@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    height: 450em;
+    height: 380em;
 }
 header{
     position: relative;
@@ -18,7 +18,7 @@ header{
 main{
     position: relative;
     width: 100%;
-    height: min-content;
+    height: 50%;
     background-image: url(assets/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,13 +27,14 @@ main{
     position: relative;
     background-image: url(assets/main2.png);
     width: 100%;
-    height: min-content;
+    height: 80%;
     bottom: 15.3em;
 }
 footer{
     position: relative;
     width: 100%;
-    height: 100em;
+    height: 25%;
+    top: 53.2em;
 }
 .star{
     position: absolute;
