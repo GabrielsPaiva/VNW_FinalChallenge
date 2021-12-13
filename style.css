@@ -3,9 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* body{
+body{
     width: 100%;
-    height: 380em;
+    height: 450em;
 }
 header{
     position: relative;
@@ -18,7 +18,7 @@ header{
 main{
     position: relative;
     width: 100%;
-    height: 50%;
+    height: min-content;
     background-image: url(assets/back.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,14 +27,13 @@ main{
     position: relative;
     background-image: url(assets/main2.png);
     width: 100%;
-    height: 80%;
+    height: min-content;
     bottom: 15.3em;
 }
 footer{
     position: relative;
     width: 100%;
-    height: 25%;
-    top: 53.2em;
+    height: 100em;
 }
 .star{
     position: absolute;
@@ -188,70 +187,52 @@ ul.main-menu li:hover{
     top: 4.6em;
     left: 8.4em;
 }
-.green-saber{
+.four-images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+}
+.image-group{
     position: absolute;
-    top: 19em;
+    display: flex;
+    flex-direction: row;
+    width: 88.2%;
+    height: 502px;
+    top: 20em;
     left: 7em;
 }
-.stormtrupper-canon{
+.four-images-hovers{
     position: absolute;
-    top: 19em;
-    left: 58.50em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 53.6%;
+    height: 520px;
+    bottom: 0em;
+    z-index: 1;
+    left: 50.5em;
 }
-.giant-robots{
-    position: absolute;
-    top: 19em;
-    left: 84.12em;
-}
-.spaceships-battling{
-    position: absolute;
-    top: 34.68em;
-    left: 58.50em;
-}
-.three-stormtruppers{
-    position: absolute;
-    top: 34.68em;
-    left: 84.12em;
-}
-.new-graphics:hover{
+.four-images-hovers img:hover{
     opacity: 0.8;
 }
-.new-graphics2:hover{
-    opacity: 0.8;
-}
-.new-graphics3:hover{
-    opacity: 0.8;
-}
-.new-graphics4:hover{
-    opacity: 0.8;
-}
-.new-graphics{
+.four-images-hovers img{
     opacity: 0;
-    position: absolute;
-    width: 27.375em;
-    top: 17.59em;
-    left: 57.5em;
+    width: 440px;
+    height: 269px;
 }
 .new-graphics2{
-    opacity: 0;
-    position: absolute;
-    width: 27.375em;
-    top: 17.59em;
-    left: 83.2em;
+    position: relative;
+    opacity: 1;
+    right: 1.8em;
 }
 .new-graphics3{
-    opacity: 0;
-    position: absolute;
-    width: 27.375em;
-    left: 57.5em;
-    top: 33.3em;
+    position: relative;
+    bottom: 1.1em;
 }
 .new-graphics4{
-    opacity: 0;
-    position: absolute;
-    width: 27.375em;
-    top: 33.3em;
-    left: 83.2em;
+    position: relative;
+    right: 1.8em;
+    bottom: 1.1em;
 }
 .hierarchy{
     position: absolute;
@@ -294,76 +275,93 @@ ul.main-menu li:hover{
     top: 9em;
     justify-content: space-between;
 }
-.download-button{
+.download{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 28%;
     font-family: 'Roboto', sans-serif;
-    width: 16.25em;
-    height: 16.68em;
+    font-size: 26px;
+    font-weight: 100;
 }
-.download-button:hover h2{
-    font-weight: bolder;
-    
+.choose{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 28%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
 }
-.download-button:hover .download-line{
-    background-color: #D74430;
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 28%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 100;
 }
-.download-button:hover button{
-    background-color: #D74430;
+.footer-buttons h2{
+    font-weight: lighter;
 }
-div.download-button h2{
-    font-size: 3em;
-    font-weight: 300;
-    padding-top: 0.1em;
-}
-div.download-button button{
+.footer-buttons button{
     background-color: black;
-    width: 19.5em;
-    height: 5em;
-    margin-top: 3.3em;
+    width: 90%;
+    height: 22%;
     border: none;
 }
-button p{
-    position: absolute;
+.download-text{
+    width: 76%;
+}
+.choose-text{
+    width: 53%;
+    text-align: center;
+}
+.explore-text{
+    width: 40%;
+    text-align: center;
+}
+.footer-buttons button p{
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.2em;
-    font-weight: 300;
+    font-size: 28px;
+    font-weight: lighter;
     text-transform: uppercase;
-    left: 1.8em;
-    top: 4.2em
 }
-.download-button-text{
-    width: 8.2em;
-    align-self: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    margin-top: 2.3em;
+.download:hover h2{
+   font-weight: bolder;
 }
-.download-line{
-    position: absolute;
+.download:hover button{
+    background-color: #D74430;
+}
+.download:hover section{
+    background-color: #D74430;
+}
+.choose:hover h2{
+    font-weight: bolder;
+ }
+ .choose:hover button{
+     background-color: #D74430;
+ }
+ .choose:hover section{
+     background-color: #D74430;
+ }
+ .explore:hover h2{
+    font-weight: bolder;
+ }
+ .explore:hover button{
+     background-color: #D74430;
+ }
+ .explore:hover section{
+     background-color: #D74430;
+ }
+.footer-buttons section{
     background-color: black;
-    width: 6em;
-    height: 0.1em;
-    bottom: 1em;
-}
-.choose-line{
-    position: absolute;
-    background-color: black;
-    width: 6em;
-    height: 0.1em;
-    bottom: 1em;
-    left: 29.5em;
-}
-.explore-line{
-    position: absolute;
-    background-color: black;
-    width: 6em;
-    height: 0.1em;
-    bottom: 1em;
-    left: 53.8em;
+    width: 40%;
+    height: 0.2em;
 }
 .about-app{
     background-image: url(assets/retangulo.png);
@@ -435,7 +433,7 @@ section.about-app h2{
     font-size: 1.27em;
     font-weight: 100;
     bottom: 1em;
-} */
+}
 @media (max-width: 425px) {
     body{
         width: 100%;
@@ -448,6 +446,25 @@ section.about-app h2{
         background-image: url(assets/urn_aaid_sc_US_aaf75fc2-eba3-41ec-bc48-de80d0615154.png);
         background-size: 26.56em  12.5em;
         background-repeat: no-repeat;
+    }
+    main{
+        position: relative;
+        width: 100%;
+        height: 229em;
+    }
+    .main2{
+        position: relative;
+        display: flex;
+        background-image: url(assets/main2.png);
+        width: 100%;
+        height: 70%;
+        bottom: 15.3em;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        height: 100em;
+        top: 10em;
     }
     .star{
         position: absolute;
@@ -487,14 +504,14 @@ section.about-app h2{
         position: absolute;
         width: 46%;
         height: 17em;
-        top: 13em ;
+        top: 1.4em ;
         left: 0.7em;
         z-index: 1;
     }
     .battlefront-banner{
         position: absolute;
         width: 23em;
-        top: 31em;
+        top: 20em;
         left: 1.2em;
     }
     .about-game-box{
@@ -503,6 +520,7 @@ section.about-app h2{
         flex-direction: column;
         width: 100%;
         height: 15em;
+        left: 0em;
         bottom: 56em;
     }
     .about-the-game{
@@ -538,318 +556,321 @@ section.about-app h2{
         height: 0.2em;
         background-color: #707070;
         left: 1.8em;
-        top: 60em;
+        top: 48em;
     }
     .lord-sifh{
-        /* position: absolute;
-        height: 51em;
-        width: 56em;
-        top: 44em;
-        left: 17.5em;
-        z-index: 1; */
+        position: absolute;
+        width: 18em;
+        height: 20em;
+        left: 7.4em;
+        top: 69em;
     }
     .game-estructure{
-        /* position: absolute;
+        position: absolute;
         width: 10em;
         height: 6em;
-        top: 18.8em;
-        right: 12em;
+        top: 40em;
+        right: 1.5em;
         font-family: 'Open Sans', sans-serif;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: lighter;
         text-transform: uppercase;
         text-align: right;
-        line-height: 1.5em; */
+        line-height: 1.5em;
     }
     mark{
-        /* background-color: transparent;
+        background-color: transparent;
         font-weight: bolder;
-        font-family: 'Roboto', sans-serif; */
+        font-family: 'Roboto', sans-serif;
     }
     .rey{
-        /* position: absolute;
-        height: 48em;
-        right: 4em;
-        top: 47.5em;
-        z-index: 1; */
+        position: absolute;
+        width: 17em;
+        height: 20em;
+        right: 12em;
+        top: 49em;
+        z-index: 0;
     }
     .main-menu{
-        /* position: absolute;
+        position: absolute;
         display: flex;
-        width: 31em;
-        height: 24em;
-        right: 31.5em;
-        top: 58em;
+        width: 20em;
+        height: 13em;
+        right: 2.5em;
+        top: 55em;
         flex-direction: column;
         justify-content: space-around;
         list-style-type: none;
         font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
         text-align: right;
-        text-transform: uppercase; */
-    }
-    ul.main-menu li{
-        /* font-size: 1.5em; */
+        text-transform: uppercase;
+        z-index: 1;
     }
     ul.main-menu li:hover{
-        /* cursor: pointer;
+        cursor: pointer;
         background-color: rgb(207, 63, 38);
-        color: white; */
+        color: white;
     }
     .atributes{
-        /* position: absolute;
+        position: absolute;
         color: white;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
-        font-size: 40px;
-        top: 4.6em;
-        left: 8.4em; */
+        font-size: 30px;
+        top: 1.2em;
+        left: 3.7em;
+        justify-self: center;
     }
-    .green-saber{
-        /* position: absolute;
-        top: 19em;
-        left: 7em; */
+    .image-group{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: min-content;
+        top: 8em;
+        left: 0em;
     }
-    .stormtrupper-canon{
-        /* position: absolute;
-        top: 19em;
-        left: 58.50em; */
-    }
-    .giant-robots{
-        /* position: absolute;
-        top: 19em;
-        left: 84.12em; */
-    }
-    .spaceships-battling{
-        /* position: absolute;
-        top: 34.68em;
-        left: 58.50em; */
-    }
-    .three-stormtruppers{
-        /* position: absolute;
-        top: 34.68em;
-        left: 84.12em; */
-    }
-    .new-graphics:hover{
-        /* opacity: 0.8; */
-    }
-    .new-graphics2:hover{
-        /* opacity: 0.8; */
-    }
-    .new-graphics3:hover{
-        /* opacity: 0.8; */
-    }
-    .new-graphics4:hover{
-        /* opacity: 0.8; */
-    }
-    .new-graphics{
-        /* opacity: 0;
+    .four-images-hovers{
         position: absolute;
-        width: 27.375em;
-        top: 17.59em;
-        left: 57.5em; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        left: 0em;
+        opacity: 1;
+        top: 15.6em;
+    }
+    .four-images-hovers img{
+        width: 100%;
+        height: 15.81em;
+        left: 0em;
     }
     .new-graphics2{
-        /* opacity: 0;
-        position: absolute;
-        width: 27.375em;
-        top: 17.59em;
-        left: 83.2em; */
+        bottom: 0.1em;
     }
     .new-graphics3{
-        /* opacity: 0;
-        position: absolute;
-        width: 27.375em;
-        left: 57.5em;
-        top: 33.3em; */
+        bottom: 0.4em
     }
     .new-graphics4{
-        /* opacity: 0;
-        position: absolute;
-        width: 27.375em;
-        top: 33.3em;
-        left: 83.2em; */
+        bottom: 0.3em;
+    }
+    .green-saber{
+        width: 100%;
     }
     .hierarchy{
-        /* position: absolute;
-        top: 54em;
-        left: 7em; */
+        position: absolute;
+        width: 100%;
+        top: 90em;
+        left: 0em;
     }
     .main2 p{
-        /* position: absolute;
+        position: absolute;
         color: white;
-        width: 45em;
-       bottom: 27em;
-       right: 6.3em;
+        width: 100%;
+       bottom: 46em;
+       left: 0em;
        font-family: 'Open Sans', sans-serif;
-       font-size: 18px;
+       font-size: 16px;
        font-weight: 100;
-       text-align: right; */
+       text-align: center;
     }
     .how-to-play{
-        /* position: absolute;
+        position: absolute;
         color: white;
-        right: 24.4em;
-        bottom: 7em;
+        width: 60%;
+        left: 3em;
+        bottom: 21em;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-size: 31px;
-        font-weight: bolder; */
+        font-weight: bolder;
     }
     .stormtrupper-capa-preta{
-        /* position: absolute;
-        height: 60em;
-        bottom: 65em;
-        left: 6em; */
+        position: absolute;
+        width: 70%;
+        height: 28em;
+        bottom: 101em;
+        left: 4em;
+        z-index: 1;
     }
     .footer-buttons{
-        /* position: absolute;
+        position: absolute;
         display: flex;
-        width: 65em;
-        height: 19em;
-        right: 6em;
-        top: 9em;
-        justify-content: space-between; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 40em;
+        left: 0em;
+        top: 0em;
+        justify-content: space-between;
+        z-index: 1;
     }
-    .download-button{
-        /* display: flex;
+    .download{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        width: 42%;
         font-family: 'Roboto', sans-serif;
-        width: 16.25em;
-        height: 16.68em; */
+        font-size: 20px;
+        font-weight: 100;
     }
-    .download-button:hover h2{
-        /* font-weight: bolder; */
-        
-    }
-    .download-button:hover .download-line{
-        /* background-color: #D74430; */
-    }
-    .download-button:hover button{
-        /* background-color: #D74430; */
-    }
-    div.download-button h2{
-        /* font-size: 3em;
-        font-weight: 300;
-        padding-top: 0.1em; */
-    }
-    div.download-button button{
-        /* background-color: black;
-        width: 19.5em;
-        height: 5em;
-        margin-top: 3.3em;
-        border: none; */
-    }
-    button p{
-        /* position: absolute;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        font-size: 2.2em;
-        font-weight: 300;
-        text-transform: uppercase;
-        left: 1.8em;
-        top: 4.2em */
-    }
-    .download-button-text{
-        /* width: 8.2em;
-        align-self: center;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.2em;
-        font-weight: 300;
-        margin-top: 2.3em; */
-    }
-    .download-line{
-        /* position: absolute;
-        background-color: black;
-        width: 6em;
-        height: 0.1em;
-        bottom: 1em; */
-    }
-    .choose-line{
-        /* position: absolute;
-        background-color: black;
-        width: 6em;
-        height: 0.1em;
-        bottom: 1em;
-        left: 29.5em; */
-    }
-    .explore-line{
-        /* position: absolute;
-        background-color: black;
-        width: 6em;
-        height: 0.1em;
-        bottom: 1em;
-        left: 53.8em; */
-    }
-    .about-app{
-        /* background-image: url(assets/retangulo.png);
-        position: absolute;
-        width: 76.75em;
-        height: 55.12em;
-        bottom: 0em; */
-    }
-    .about-app-content{
-        /* position: relative;
+    .choose{
         display: flex;
         flex-direction: column;
-        width: 45%;
-        height: 80%;
-        margin: 10em;
-        margin-left: 13em; */
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .explore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 0 0 7em 6.5em;
+    }
+    .footer-buttons h2{
+        font-weight: lighter;
+    }
+    .footer-buttons button{
+        background-color: black;
+        width: 90%;
+        height: 22%;
+        border: none;
+    }
+    .download-text{
+        width: 100%;
+    }
+    .choose-text{
+        width: 64%;
+        text-align: center;
+    }
+    .explore-text{
+        width: 60%;
+        text-align: center;
+    }
+    .footer-buttons button p{
+        color: white;
+        font-size: 20px;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+    .download:hover h2{
+       font-weight: bolder;
+    }
+    .download:hover button{
+        background-color: red;
+    }
+    .download:hover section{
+        background-color: red;
+    }
+    .choose:hover h2{
+        font-weight: bolder;
+     }
+     .choose:hover button{
+         background-color: red;
+     }
+     .choose:hover section{
+         background-color: red;
+     }
+     .explore:hover h2{
+        font-weight: bolder;
+     }
+     .explore:hover button{
+         background-color: red;
+     }
+     .explore:hover section{
+         background-color: red;
+     }
+    .footer-buttons section{
+        background-color: black;
+        margin-bottom: 2em;
+        width: 40%;
+        height: 0.2em;
+    }
+    .about-app{
+        position: absolute;
+        width: 100%;
+        height:100%;
+    }
+    .about-app-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 90%;
+        right: 13em;
+        top: 23em;
     }
     section.about-app h2{
-        /* color: white;
+        color: white;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
-        font-size: 2.5em; */
+        font-size: 2.5em;
     }
     .darth-vader{
-        /* position: absolute;
-        bottom: 2.9em;
-        right: 5.6em; */
+        position: absolute;
+        width: 26em;
+        top: 90em;
+        right: 0.1em;
     }
     .footer-first-paragraph{
-        /* color: white;
+        color: white;
         font-family: 'Open Sans', sans-serif;
         font-size: 1.27em;
-        font-weight: 100; */
+        font-weight: 100;
+        text-align: center;
     }
     section.about-app h2{
-        /* margin-bottom: 1.5em; */
+        margin-bottom: 1em;
     }
     .store-badges{
-        /* position: relative;
+        position: relative;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         width: 35em;
-        height: 4.3em;
-        top: 2em; */
+        height: 11em;
+        top: 2em;
     }
     .google-play{
-        /* width: 16.8em;
-        height: 4.3em; */
+        width: 16.8em;
+        height: 5em;
     }
     .app-store{
-        /* width: 16.8em;
-        height: 4.3em; */
+        width: 16.8em;
+        height: 5em;
     }
     .under-badges-line{
-        /* position: absolute;
+        position: absolute;
         background-color: #D74430;
-        width: 35em;
+        width: 100%;
         height: 0.2em;
-        top: 22.5em; */
+        top: 30em;
     }
     .star-wars{
-        /* position: absolute;
-        top: 25.9em; */
+        position: absolute;
+        top: 32em;
     }
     .footer-second-paragraph{
-        /* color: white;
+        color: white;
         position: absolute;
         font-family: 'Open Sans', sans-serif;
         font-size: 1.27em;
         font-weight: 100;
-        bottom: 1em; */
+        text-align: center;
+        bottom: 27em;
+        z-index: 1;
     } 
 }
