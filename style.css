@@ -178,6 +178,7 @@ ul.main-menu li:hover{
     cursor: pointer;
     background-color: rgb(207, 63, 38);
     color: white;
+    z-index: 1;
 }
 .atributes{
     position: absolute;
@@ -264,26 +265,30 @@ ul.main-menu li:hover{
 .stormtrupper-capa-preta{
     position: absolute;
     height: 60em;
-    top: 220em;
-    left: 9em;
+    top: 210em;
+    left: 6em;
 }
 .main2-buttons{
     position: absolute;
     display: flex;
-    width: 65em;
-    height: 19em;
-    right: 6em;
-    top: 250em;
+    flex-direction: row;
+    align-items: center ;
     justify-content: space-between;
+    width: 65em;
+    height: 46em;
+    right: 8em;
+    top: 235em;
+    z-index: 1;
 }
 .download{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 28%;
+    width: 26%;
+    height: 33%;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 100;
 }
 .choose{
@@ -291,9 +296,10 @@ ul.main-menu li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 28%;
+    width: 26%;
+    height: 33%;
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 100;
 }
 .explore{
@@ -301,13 +307,16 @@ ul.main-menu li:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 28%;
+    width: 26%;
+    height: 33%;
+
     font-family: 'Roboto', sans-serif;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 100;
 }
 .main2-buttons h2{
-    font-weight: lighter;
+    font-weight: 400;
+    font-size: 40px;
 }
 .main2-buttons button{
     background-color: black;
@@ -316,49 +325,59 @@ ul.main-menu li:hover{
     border: none;
 }
 .download-text{
-    width: 76%;
+    width: 60%;
+    text-align: center;
 }
 .choose-text{
-    width: 53%;
+    width: 40%;
     text-align: center;
 }
 .explore-text{
-    width: 40%;
+    width: 30%;
     text-align: center;
 }
 .main2-buttons button p{
     color: white;
-    font-size: 28px;
-    font-weight: lighter;
+    font-size: 25px;
+    font-weight: 100;
     text-transform: uppercase;
 }
- .download:hover button{
+.download:hover h2{
+   font-weight: 900;
+   font-size: 40px;
+}
+.download:hover button{
+    background-color: #D74430;
+    cursor: pointer;
+}
+.download:hover section{
+    background-color: #D74430;
+}
+.choose:hover h2{
+    font-weight: 900;
+    font-size: 40px;
+ }
+ .choose:hover button{
+     background-color: #D74430;
+     cursor: pointer;
+ }
+ .choose:hover section{
      background-color: #D74430;
  }
- .download:hover section{
+ .explore:hover h2{
+    font-weight: 900;
+    font-size: 40px;
+ }
+ .explore:hover button{
+     background-color: #D74430;
+     cursor: pointer;
+ }
+ .explore:hover section{
      background-color: #D74430;
  }
- .choose:hover h2{
-     font-weight: bolder;
-  }
-  .choose:hover button{
-      background-color: #D74430;
-  }
-  .choose:hover section{
-      background-color: #D74430;
-  }
-  .explore:hover h2{
-     font-weight: bolder;
-  }
-  .explore:hover button{
-      background-color: #D74430;
-  }
-  .explore:hover section{
-      background-color: #D74430;
-  }
 .main2-buttons section{
     background-color: black;
-    width: 40%;
+    width: 36%;
     height: 0.2em;
 }
 .about-app{
@@ -431,6 +450,232 @@ section.about-app h2{
     font-size: 1.27em;
     font-weight: 100;
     bottom: 1em;
+}
+@media (max-width: 1440px) {
+    body{
+        height: 350em;
+    }
+    header{
+        height: 10%;
+    }
+    .main2{
+        height: 80.3%;
+    }
+    footer{
+        height: 30em;
+        top: 110em;
+    }
+    .star{
+        width: 22em;
+        height: 6em;
+        top: 21em;
+        left: 16em;
+    }
+    .kylo-ren{
+        width: 60em;
+        height: 41em;
+        top: 3em;
+        left: 10em;
+    }
+    .wars{
+        width: 23em;
+        height: 6em;
+        top: 21.5em;
+        right: 10em;
+    }
+    .create-legion{
+        top: 32em;
+        right: 8em;
+    }
+    .begin-to-play{
+        left: 7em;
+        bottom: 140em;
+    }
+    .about-game-box{
+        left: 33.6em;
+        bottom: 72.7em;
+    }
+    .about-the-game{
+        font-size: 38px;
+    }
+    .about-game-text{
+        width: 26.5em;
+        height: 9em;
+        top: 5em;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        line-height: 1.45em;
+    }
+    .line2{
+        width: 82em;
+    }
+    .lord-sifh{
+        left: 1em;
+    }
+    .game-estructure{
+        right: 10em;
+    }
+    .main-menu{
+        right: 26em;
+        font-weight: 600;
+    }
+    .atributes{
+        left: 5em;
+    }
+    .image-group{
+        width: 92%;
+        height: 18%;
+        left: 5em;
+    }
+    .green-saber{
+        width: 49.2%;
+    }
+    .four-images img{
+        width: 49.2%;
+    }
+    .four-images-hovers{
+        width: 54.2%;
+        height: 26.2em;
+        left: 39.9em;
+    }
+    .four-images-hovers img{
+        width: 49.9%;
+        height: 52.2%;
+    }
+    .hierarchy{
+        width: 92%;
+        top: 51em;
+        left: 4.8em;
+    }
+    .main2 p{
+        bottom: 35em;
+        right: 2.3em;
+        font-size: 16px;
+    }
+    .how-to-play{
+        right: 17em;
+        bottom: 9em;
+    }
+    .stormtrupper-capa-preta{
+        top: 200em;
+        left: 4em;
+    }
+    .download{
+        width: 35%;
+    }
+    .choose{
+        width: 34%;
+    }
+    .explore{
+        width: 34%;
+    }
+    .download-text{
+        width: 70%;
+    }
+    .choose-text{
+        width: 50%;
+    }
+    .explore-text{
+        width: 40%;
+    }
+    .main2-buttons{
+        width: 48%;
+        right: 3em;
+        top: 228em; 
+    }
+    .about-app{
+        width: 60em;
+        height: 46.5em;
+        bottom: 0em;
+    }
+    .about-app-content{
+        width: 57%;
+        bottom: 6em;
+    }
+    section.about-app h2{
+        margin-bottom: 1em;
+    }
+    .under-badges-line{
+        top: 20em;
+    }
+    .star-wars{
+        top: 23em;
+    }
+    .footer-second-paragraph{
+        top: 26em;
+    }
+    .darth-vader{
+        width: 40em;
+        left: 49em;
+        bottom: 2em;
+    }
+}
+@media (max-width: 1366px){
+    .star{
+        top: 20em;
+        left: 15.0em;
+    }
+    .kylo-ren{
+        top: 2em;
+        left: 9em;
+    }
+    .wars{
+        top: 20.5em;
+        right: 6em
+    }
+    .create-legion{
+        right: 5em;
+    }
+    .battlefront-banner{
+        width: 20em;
+        top: 23em;
+    }
+    .about-game-box{
+        width: 25em;
+        bottom: 69em;
+        left: 38.5em;
+    }
+    .about-the-game{
+        font-size: 38px;
+    }
+    .about-game-text{
+        font-size: 15px;
+    }
+    .line1{
+        top: 3.7em;
+    }
+    .game-estructure{
+        right: 8.5em;
+    }
+    .main-menu{
+        right: 22.4em;
+    }
+    .rey{
+        right: 0.2em;
+    }
+    .green-saber{
+        width: 46.6%;
+    }
+    .four-images-hovers{
+        width: 44.5em;
+        left: 35.9em;
+    }
+    .four-images-hovers img{
+        width: 50%;
+    }
+    .stormtrupper-capa-preta{
+        left: 2em;
+    }
+    .download-text{
+        width: 75%;
+    }
+    .darth-vader{
+        width: 35em;
+        height: 50em;
+        left: 50.3em;
+        bottom: 3em;
+    }
 }
 @media (max-width: 425px) {
     body{
@@ -876,4 +1121,3 @@ section.about-app h2{
         bottom: 8em;
         z-index: 1;
     } 
-}
