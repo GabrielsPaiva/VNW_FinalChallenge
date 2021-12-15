@@ -680,12 +680,12 @@ section.about-app h2{
 @media (max-width: 425px) {
     body{
         width: 100%;
-        height: fit-content;
+        height: 358.8em;
     }
     header{
         position: relative;
         width: 100%;
-        height: 13%;
+        height: 3%;
         background-image: url(assets/urn_aaid_sc_US_aaf75fc2-eba3-41ec-bc48-de80d0615154.png);
         background-size: 26.56em  12.5em;
         background-repeat: no-repeat;
@@ -722,7 +722,7 @@ section.about-app h2{
         width: 17.3em;
         height: 12.1em;
         top: 1.3em;
-        right: 5.10em;
+        left: 3em;
         z-index: 1;
     }
     .wars{
@@ -837,15 +837,16 @@ section.about-app h2{
     .main-menu{
         position: absolute;
         display: flex;
-        width: 20em;
-        height: 13em;
+        width: 27em;
+        height: 17em;
         right: 2.5em;
-        top: 55em;
+        top: 73em;
         flex-direction: column;
         justify-content: space-around;
         list-style-type: none;
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
+        font-size: 12px;
         text-align: right;
         text-transform: uppercase;
         z-index: 1;
@@ -868,39 +869,40 @@ section.about-app h2{
     .image-group{
         position: relative;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 100%;
-        height: min-content;
+        height: 200em;
         top: 8em;
         left: 0em;
+    }
+    .four-images{
+        flex-direction: column;
+    }
+    .four-images img{
+        width: 100%;
     }
     .four-images-hovers{
         position: absolute;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
         width: 100%;
         left: 0em;
         opacity: 1;
-        top: 15.6em;
+        top: 15.4em;
     }
     .four-images-hovers img{
         width: 100%;
-        height: 15.81em;
+        height: 15.5em;
         left: 0em;
-    }
-    .new-graphics2{
-        bottom: 0.1em;
-    }
-    .new-graphics3{
-        bottom: 0.4em
-    }
-    .new-graphics4{
-        bottom: 0.3em;
     }
     .green-saber{
         width: 100%;
+    }
+    .new-graphics3{
+        bottom: 0em;
+    }
+    .new-graphics4{
+        bottom: 0em;
     }
     .hierarchy{
         position: absolute;
@@ -1012,7 +1014,7 @@ section.about-app h2{
         text-transform: uppercase;
     }
     .download:hover h2{
-       font-weight: bolder;
+       font-weight: 900;
     }
     .download:hover button{
         background-color: #D74430;
@@ -1021,7 +1023,7 @@ section.about-app h2{
         background-color: #D74430;
     }
     .choose:hover h2{
-        font-weight: bolder;
+        font-weight: 900;
      }
      .choose:hover button{
          background-color: #D74430;
@@ -1030,7 +1032,7 @@ section.about-app h2{
          background-color: #D74430;
      }
      .explore:hover h2{
-        font-weight: bolder;
+        font-weight: 900;
      }
      .explore:hover button{
          background-color: #D74430;
@@ -1057,6 +1059,7 @@ section.about-app h2{
         width: 100%;
         height: 90%;
         right: 13em;
+        bottom: 0em;
     }
     section.about-app h2{
         position: absolute;
@@ -1068,9 +1071,10 @@ section.about-app h2{
     }
     .darth-vader{
         position: absolute;
-        width: 26em;
+        width: 25em;
+        height: 36em;
         top: 60em;
-        right: 0.1em;
+        left: 0.1em;
     }
     .footer-first-paragraph{
         color: white;
@@ -1118,6 +1122,6 @@ section.about-app h2{
         font-size: 1.27em;
         font-weight: 100;
         text-align: center;
-        bottom: 8em;
+        top: 28em;
         z-index: 1;
-    } 
+    }
