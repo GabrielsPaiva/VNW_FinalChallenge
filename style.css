@@ -264,16 +264,16 @@ ul.main-menu li:hover{
 .stormtrupper-capa-preta{
     position: absolute;
     height: 60em;
-    bottom: 65em;
-    left: 6em;
+    top: 220em;
+    left: 9em;
 }
-.footer-buttons{
+.main2-buttons{
     position: absolute;
     display: flex;
     width: 65em;
     height: 19em;
     right: 6em;
-    top: 9em;
+    top: 250em;
     justify-content: space-between;
 }
 .download{
@@ -306,10 +306,10 @@ ul.main-menu li:hover{
     font-size: 26px;
     font-weight: 100;
 }
-.footer-buttons h2{
+.main2-buttons h2{
     font-weight: lighter;
 }
-.footer-buttons button{
+.main2-buttons button{
     background-color: black;
     width: 90%;
     height: 22%;
@@ -326,40 +326,37 @@ ul.main-menu li:hover{
     width: 40%;
     text-align: center;
 }
-.footer-buttons button p{
+.main2-buttons button p{
     color: white;
     font-size: 28px;
     font-weight: lighter;
     text-transform: uppercase;
 }
-.download:hover h2{
-   font-weight: bolder;
-}
-.download:hover button{
-    background-color: #D74430;
-}
-.download:hover section{
-    background-color: #D74430;
-}
-.choose:hover h2{
-    font-weight: bolder;
- }
- .choose:hover button{
+ .download:hover button{
      background-color: #D74430;
  }
- .choose:hover section{
+ .download:hover section{
      background-color: #D74430;
  }
- .explore:hover h2{
-    font-weight: bolder;
- }
- .explore:hover button{
-     background-color: #D74430;
- }
- .explore:hover section{
-     background-color: #D74430;
- }
-.footer-buttons section{
+ .choose:hover h2{
+     font-weight: bolder;
+  }
+  .choose:hover button{
+      background-color: #D74430;
+  }
+  .choose:hover section{
+      background-color: #D74430;
+  }
+  .explore:hover h2{
+     font-weight: bolder;
+  }
+  .explore:hover button{
+      background-color: #D74430;
+  }
+  .explore:hover section{
+      background-color: #D74430;
+  }
+.main2-buttons section{
     background-color: black;
     width: 40%;
     height: 0.2em;
@@ -458,14 +455,14 @@ section.about-app h2{
         display: flex;
         background-image: url(assets/main2.png);
         width: 100%;
-        height: 70%;
+        height: 60%;
         bottom: 15.3em;
     }
     footer{
         position: relative;
         width: 100%;
-        height: 100em;
-        top: 10em;
+        height: 65em;
+        top: 54em;
     }
     .star{
         position: absolute;
@@ -670,7 +667,7 @@ section.about-app h2{
         position: absolute;
         color: white;
         width: 100%;
-       bottom: 46em;
+       bottom: 24em;
        left: 0em;
        font-family: 'Open Sans', sans-serif;
        font-size: 16px;
@@ -682,7 +679,7 @@ section.about-app h2{
         color: white;
         width: 60%;
         left: 3em;
-        bottom: 21em;
+        bottom: 9em;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
         font-size: 31px;
@@ -692,20 +689,20 @@ section.about-app h2{
         position: absolute;
         width: 70%;
         height: 28em;
-        bottom: 101em;
+        top: 210em;
         left: 4em;
         z-index: 1;
     }
-    .footer-buttons{
+    .main2-buttons{
         position: absolute;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center ;
+        justify-content: space-between;
         width: 100%;
         height: 40em;
         left: 0em;
-        top: 0em;
-        justify-content: space-between;
+        top: 240em;
         z-index: 1;
     }
     .download{
@@ -714,6 +711,7 @@ section.about-app h2{
         align-items: center;
         justify-content: space-between;
         width: 42%;
+        height: 33%;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 100;
@@ -724,6 +722,7 @@ section.about-app h2{
         align-items: center;
         justify-content: space-between;
         width: 40%;
+        height: 33%;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 100;
@@ -734,15 +733,16 @@ section.about-app h2{
         align-items: center;
         justify-content: space-between;
         width: 40%;
+        height: 33%;
+
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 100;
-        margin: 0 0 7em 6.5em;
     }
-    .footer-buttons h2{
+    .main2-buttons h2{
         font-weight: lighter;
     }
-    .footer-buttons button{
+    .main2-buttons button{
         background-color: black;
         width: 90%;
         height: 22%;
@@ -750,6 +750,7 @@ section.about-app h2{
     }
     .download-text{
         width: 100%;
+        text-align: center;
     }
     .choose-text{
         width: 64%;
@@ -759,7 +760,7 @@ section.about-app h2{
         width: 60%;
         text-align: center;
     }
-    .footer-buttons button p{
+    .main2-buttons button p{
         color: white;
         font-size: 20px;
         font-weight: lighter;
@@ -769,30 +770,30 @@ section.about-app h2{
        font-weight: bolder;
     }
     .download:hover button{
-        background-color: red;
+        background-color: #D74430;
     }
     .download:hover section{
-        background-color: red;
+        background-color: #D74430;
     }
     .choose:hover h2{
         font-weight: bolder;
      }
      .choose:hover button{
-         background-color: red;
+         background-color: #D74430;
      }
      .choose:hover section{
-         background-color: red;
+         background-color: #D74430;
      }
      .explore:hover h2{
         font-weight: bolder;
      }
      .explore:hover button{
-         background-color: red;
+         background-color: #D74430;
      }
      .explore:hover section{
-         background-color: red;
+         background-color: #D74430;
      }
-    .footer-buttons section{
+    .main2-buttons section{
         background-color: black;
         margin-bottom: 2em;
         width: 40%;
@@ -811,18 +812,19 @@ section.about-app h2{
         width: 100%;
         height: 90%;
         right: 13em;
-        top: 23em;
     }
     section.about-app h2{
+        position: absolute;
         color: white;
         text-transform: uppercase;
         font-family: 'Open Sans', sans-serif;
         font-size: 2.5em;
+        bottom: 23.4em;
     }
     .darth-vader{
         position: absolute;
         width: 26em;
-        top: 90em;
+        top: 60em;
         right: 0.1em;
     }
     .footer-first-paragraph{
@@ -858,11 +860,11 @@ section.about-app h2{
         background-color: #D74430;
         width: 100%;
         height: 0.2em;
-        top: 30em;
+        top: 23em;
     }
     .star-wars{
         position: absolute;
-        top: 32em;
+        top: 25em;
     }
     .footer-second-paragraph{
         color: white;
@@ -871,7 +873,7 @@ section.about-app h2{
         font-size: 1.27em;
         font-weight: 100;
         text-align: center;
-        bottom: 27em;
+        bottom: 8em;
         z-index: 1;
     } 
 }
