@@ -491,6 +491,9 @@ section.about-app h2{
         left: 7em;
         bottom: 140em;
     }
+    .battlefront-banner{
+        right: 0.2em;
+    }
     .about-game-box{
         left: 33.6em;
         bottom: 72.7em;
@@ -658,7 +661,7 @@ section.about-app h2{
         width: 46.6%;
     }
     .four-images-hovers{
-        width: 44.5em;
+        width: 43.5em;
         left: 35.9em;
     }
     .four-images-hovers img{
@@ -671,9 +674,9 @@ section.about-app h2{
         width: 75%;
     }
     .darth-vader{
-        width: 34em;
+        width: 34.4em;
         height: 50em;
-        left: 50.3em;
+        left: 50em;
         bottom: 3em;
     }
 }
@@ -891,6 +894,7 @@ section.about-app h2{
         top: 15.4em;
     }
     .four-images-hovers img{
+        background-color: aqua;
         width: 100%;
         height: 15.5em;
         left: 0em;
